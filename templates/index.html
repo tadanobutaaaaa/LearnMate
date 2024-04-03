@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>test_app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>対話型アウトプットサービス</h1>
+    </header>
+
+    <form method="post">
+        <label for="question">メッセージを入力してください</label>
+        <input type="text" id="question" name="question">
+        <input type="submit" value="回答する">
+    </form>
+
+    {% if response %}
+    <div class="response">
+        <p>{{ response|safe }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>

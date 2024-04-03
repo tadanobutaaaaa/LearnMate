@@ -1,0 +1,79 @@
+/* 全体のレイアウト */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+header {
+    background-color: #808080;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+header img {
+    max-height: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+form {
+    position: fixed;
+    bottom: 20px; /* 適切な余白を追加 */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* 入力フォーム内の要素を中央揃えにするために追加 */
+    padding: 20px; /* 適切な余白を追加 */
+    background-color: #f0f0f0; /* 背景色を追加 */
+    border: 1px solid #ccc; /* ボーダーを追加 */
+    border-radius: 10px; /* 角丸を追加 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    width: 600px; /* 幅を指定 */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #808080;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* 応答 */
+.response {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.response p {
+    margin: 0;
+}
